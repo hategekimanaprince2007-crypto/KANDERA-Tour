@@ -1,0 +1,159 @@
+
+<!-- HOTELS SECTION -->
+<section class="hotels-section" id="hotels">
+  <div class="hotels-container">
+
+    <p class="eyebrow">STAY BY LAKE KIVU</p>
+
+    <h2>Discover Hotels in <em>Rubavu.</em></h2>
+
+    <p class="hotels-intro">
+      Find your perfect stay in Rubavu, Rwanda. Explore lakeside resorts,
+      comfortable hotels and welcoming accommodation for your next trip.
+    </p>
+
+    <!-- SEARCH AND FILTER -->
+    <div class="hotel-controls">
+      <input
+        type="search"
+        id="hotelSearch"
+        placeholder="Search hotels..."
+        aria-label="Search hotels by name or location"
+      >
+
+      <select id="hotelFilter" aria-label="Filter hotels by type">
+        <option value="all">All accommodation</option>
+        <option value="luxury">Luxury hotels</option>
+        <option value="resort">Resorts</option>
+        <option value="comfort">Comfort hotels</option>
+      </select>
+    </div>
+
+    <p id="hotelCount" class="hotel-count" aria-live="polite"></p>
+
+    <div class="hotel-grid" id="hotelGrid">
+
+      <!-- HOTEL 1 -->
+      <article class="hotel-card"
+        data-name="Lake Kivu Serena Hotel"
+        data-type="luxury"
+        data-location="Gisenyi Rubavu Lake Kivu">
+
+        <a href="https://www.serenahotels.com/"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/lake-kivu-serena.jpg"
+               alt="Lake Kivu Serena Hotel in Rubavu"
+               loading="lazy">
+        </a>
+
+        <div class="hotel-content">
+          <span class="hotel-category">LAKESIDE LUXURY</span>
+          <h3>Lake Kivu Serena Hotel</h3>
+          <p class="hotel-location">📍 Gisenyi, Rubavu</p>
+          <p>
+            An upscale lakeside hotel with a private beach,
+            swimming pool and facilities for relaxation.
+          </p>
+          <a class="hotel-button"
+             href="https://www.serenahotels.com/"
+             target="_blank" rel="noopener noreferrer">
+            Visit Hotel Website ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- HOTEL 2 -->
+      <article class="hotel-card"
+        data-name="Kivu Paradis Resort"
+        data-type="resort"
+        data-location="Nyamyumba Gisenyi Rubavu Lake Kivu">
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Kivu+Paradis+Resort+Rubavu"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/kivu-paradis-resort.jpg"
+               alt="Kivu Paradis Resort near Lake Kivu"
+               loading="lazy">
+        </a>
+
+        <div class="hotel-content">
+          <span class="hotel-category">LAKE KIVU RESORT</span>
+          <h3>Kivu Paradis Resort</h3>
+          <p class="hotel-location">📍 Nyamyumba, Rubavu</p>
+          <p>
+            A lakeside retreat for visitors looking for
+            relaxation, local food and lake activities.
+          </p>
+          <a class="hotel-button"
+             href="https://www.google.com/maps/search/?api=1&query=Kivu+Paradis+Resort+Rubavu"
+             target="_blank" rel="noopener noreferrer">
+            View Location ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- HOTEL 3 -->
+      <article class="hotel-card"
+        data-name="Hill View Hotel Lake Kivu"
+        data-type="comfort"
+        data-location="Gisenyi Rubavu Lake Kivu">
+
+        <a href="https://www.hillviewhotelrwanda.com/"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/hill-view-hotel.jpg"
+               alt="Hill View Hotel Lake Kivu in Rubavu"
+               loading="lazy">
+        </a>
+
+        <div class="hotel-content">
+          <span class="hotel-category">COMFORT & BUSINESS</span>
+          <h3>Hill View Hotel Lake Kivu</h3>
+          <p class="hotel-location">📍 Gisenyi, Rubavu</p>
+          <p>
+            Accommodation with lake views, dining and facilities
+            suitable for leisure and business visitors.
+          </p>
+          <a class="hotel-button"
+             href="https://www.hillviewhotelrwanda.com/"
+             target="_blank" rel="noopener noreferrer">
+            Visit Hotel Website ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- HOTEL 4 -->
+      <article class="hotel-card"
+        data-name="Kivu Peace View Hotel"
+        data-type="comfort"
+        data-location="Gisenyi Rubavu Lake Kivu">
+
+        <a href="https://www.kivupeaceviewhotel.com/"
+           target="_blank" rel="noopener noreferrer">
+          <img src="images/kivu-peace-view.jpg"
+               alt="Kivu Peace View Hotel in Rubavu"
+               loading="lazy">
+        </a>
+
+        <div class="hotel-content">
+          <span class="hotel-category">COMFORT & RELAXATION</span>
+          <h3>Kivu Peace View Hotel</h3>
+          <p class="hotel-location">📍 Gisenyi, Rubavu</p>
+          <p>
+            A welcoming hotel offering different room types,
+            Wi-Fi, a restaurant and a convenient base for exploring Rubavu.
+          </p>
+          <a class="hotel-button"
+             href="https://www.kivupeaceviewhotel.com/"
+             target="_blank" rel="noopener noreferrer">
+            View Rooms & Prices ↗
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <p id="noHotels" class="no-hotels" hidden>
+      No hotels match your search. Try another name or category.
+    </p>
+
+  </div>
+</section>

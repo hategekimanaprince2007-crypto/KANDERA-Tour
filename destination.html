@@ -1,0 +1,154 @@
+<body>
+
+<header class="destination-header">
+  <a href="index.html" class="destination-logo">KABENDERA <span>TOUR LTD.</span></a>
+  <a href="index.html" class="destination-back">Main Website</a>
+</header>
+
+<main class="destination-container">
+
+  <section class="destination-hero">
+    <span>DISCOVER THE LAND OF A THOUSAND HILLS</span>
+    <h1>Explore Rwanda's Destinations</h1>
+    <p>
+      From mountain gorillas and green rainforests to beautiful lakes
+      and exciting wildlife safaris, discover a destination for every journey.
+    </p>
+    <a href="#destination-list" class="destination-hero-link">
+      Discover destinations ↓
+    </a>
+  </section>
+
+  <section id="destination-list">
+    <div class="destination-heading">
+      <span>YOUR NEXT ADVENTURE</span>
+      <h2>Popular Destinations</h2>
+      <p>Choose a destination and start planning your Rwanda experience.</p>
+    </div>
+
+    <div class="destination-filters">
+      <input type="search" id="destination-search"
+        placeholder="Search destinations..."
+        aria-label="Search destinations">
+
+      <select id="destination-category" aria-label="Filter destinations">
+        <option value="all">All destinations</option>
+        <option value="wildlife">Wildlife & Safari</option>
+        <option value="nature">Nature & Adventure</option>
+        <option value="lake">Lake & Leisure</option>
+        <option value="culture">Culture & City</option>
+      </select>
+    </div>
+
+    <div class="destination-grid" id="destination-grid">
+
+      <article class="destination-card" data-category="wildlife">
+        <img src="Gorilla Family in Misty Rainforest.png"
+          alt="Mountain gorillas in a misty rainforest" loading="lazy">
+        <div class="destination-content">
+          <span class="destination-tag">WILDLIFE</span>
+          <h3>Volcanoes National Park</h3>
+          <p class="destination-location">Musanze, Northern Rwanda</p>
+          <p>Discover mountain gorillas, bamboo forests, and volcanic scenery.</p>
+          <button class="destination-details" data-destination="volcanoes">
+            Explore destination →
+          </button>
+        </div>
+      </article>
+
+      <article class="destination-card" data-category="lake">
+        <img src="tour1.jpeg"
+          alt="Lake Kivu and its surrounding hills" loading="lazy">
+        <div class="destination-content">
+          <span class="destination-tag">LAKE & LEISURE</span>
+          <h3>Lake Kivu</h3>
+          <p class="destination-location">Rubavu and Western Rwanda</p>
+          <p>Enjoy lakeside views, boat trips, and peaceful relaxation.</p>
+          <button class="destination-details" data-destination="kivu">
+            Explore destination →
+          </button>
+        </div>
+      </article>
+
+      <article class="destination-card" data-category="wildlife">
+        <img src="tour4.jpeg"
+          alt="Wildlife safari scenery" loading="lazy">
+        <div class="destination-content">
+          <span class="destination-tag">WILDLIFE & SAFARI</span>
+          <h3>Akagera National Park</h3>
+          <p class="destination-location">Eastern Rwanda</p>
+          <p>Explore savannah scenery and discover wildlife on safari.</p>
+          <button class="destination-details" data-destination="akagera">
+            Explore destination →
+          </button>
+        </div>
+      </article>
+
+      <article class="destination-card" data-category="nature">
+        <img src="tour3.jpeg"
+          alt="Nyungwe rainforest" loading="lazy">
+        <div class="destination-content">
+          <span class="destination-tag">NATURE & ADVENTURE</span>
+          <h3>Nyungwe National Park</h3>
+          <p class="destination-location">Southern Rwanda</p>
+          <p>Experience rainforest biodiversity, forest trails, and canopy walks.</p>
+          <button class="destination-details" data-destination="nyungwe">
+            Explore destination →
+          </button>
+        </div>
+      </article>
+
+      <article class="destination-card" data-category="culture">
+        <img src="tour8.jpeg"
+          alt="Kigali city attractions" loading="lazy">
+        <div class="destination-content">
+          <span class="destination-tag">CITY & CULTURE</span>
+          <h3>Kigali City</h3>
+          <p class="destination-location">Kigali, Rwanda</p>
+          <p>Discover city attractions, museums, markets, and local experiences.</p>
+          <button class="destination-details" data-destination="kigali">
+            Explore destination →
+          </button>
+        </div>
+      </article>
+
+      <article class="destination-card" data-category="nature">
+        <img src="tour2.jpeg"
+          alt="Rwanda's green mountains" loading="lazy">
+        <div class="destination-content">
+          <span class="destination-tag">NATURE & ADVENTURE</span>
+          <h3>Rwanda's Mountain Landscapes</h3>
+          <p class="destination-location">Various regions of Rwanda</p>
+          <p>Discover scenic hills, mountain trails, and beautiful landscapes.</p>
+          <button class="destination-details" data-destination="mountains">
+            Explore destination →
+          </button>
+        </div>
+      </article>
+
+    </div>
+
+    <p id="destination-empty" hidden>No destinations match your search.</p>
+  </section>
+
+  <section class="destination-detail-panel" id="destination-panel" hidden>
+    <button id="destination-close" class="destination-close">Close ✕</button>
+    <span class="destination-tag">DESTINATION GUIDE</span>
+    <h2 id="destination-detail-title"></h2>
+    <p id="destination-detail-location"></p>
+    <p id="destination-detail-description"></p>
+    <h3>Things to experience</h3>
+    <ul id="destination-activities"></ul>
+    <a id="destination-booking" href="index.html#booking"
+      class="destination-book-link">Plan your trip →</a>
+  </section>
+
+</main>
+
+<footer class="destination-footer">
+  <p>© 2026 KABENDERA Tour Ltd. | Discover Rwanda</p>
+</footer>
+
+<script src="destinations.js"></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Rwanda with KABENDERA Tour Ltd.">
+  <title>KABENDERA Tour Ltd. | Discover Rwanda</title>
+
+<style>
+.experience-intro {
+  max-width: 650px;
+  margin: 18px 0 30px;
+  color: #cbd4cc;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+  border-top: none;
+}
+
+.experience-card {
+  overflow: hidden;
+  background: #ffffff;
+  color: #26382f;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px #00000025;
+}
+
+.experience-card > a:first-child {
+  display: block;
+  overflow: hidden;
+}
+
+.experience-card img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.experience-card:hover img {
+  transform: scale(1.05);
+}
+
+.experience-content {
+  padding: 22px;
+}
+
+.experience-content > span {
+  color: #9b8047;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.experience-content h3 {
+  margin: 12px 0;
+  color: #173d32;
+  font-size: 23px;
+}
+
+.experience-content p {
+  color: #737d74;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.experience-content .experience-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #173d32;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #d8b777;
+  padding-bottom: 5px;
+}
+
+.experience-content .experience-link:hover {
+  color: #9b8047;
+}
+
+/* TABLETS */
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+/* PHONES */
+@media (max-width: 560px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card img {
+    height: 240px;
+  }
+
+  .experience-content {
+    padding: 18px;
+  }
+}
+ .experience-grid article,
+  .experience-grid article + article {
+    border-left: 0;
+    border-bottom: 1px solid #ffffff36;
+    padding: 20px 0;
+  }
+
+  #booking-form {
+    padding: 20px 15px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .footer-main {
+    flex-wrap: wrap;
+  }
+
+  .footer-main > p {
+    width: 100%;
+    order: 3;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .dialog-buttons {
+    flex-direction: column;
+  }
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+
+</style>
+<section class="experience section" id="experiences">
+      <p class="eyebrow">MAKE IT MEMORABLE</p>
+      <h2>Experiences beyond <em>the ordinary.</em></h2>
+
+      <div class="experience-grid">
+        <article>
+          <span class="experience-number">01</span>
+          <h3>Wildlife adventures</h3>
+          <p>Ask us about guided wildlife experiences and gorilla trekking arrangements.</p>
+        </article>
+        <article>
+          <span class="experience-number">02</span>
+          <h3>Lake & leisure</h3>
+          <p>Slow down in Rubavu and discover the beauty of Lake Kivu.</p>
+        </article>
+        <article>
+          <span class="experience-number">03</span>
+          <h3>Custom journeys</h3>
+          <p>Combine destinations and experiences to suit your interests and schedule.</p>
+        </article>
+      </div>
+    </section>
+
+<section class="experience section" id="experiences">
+  <p class="eyebrow">MAKE IT MEMORABLE</p>
+
+  <h2>Experiences beyond
+    <em>the ordinary.</em>
+  </h2>
+
+  <p class="experience-intro">
+    Discover Rwanda through wildlife, culture,
+    beautiful landscapes and unforgettable adventures.
+  </p>
+
+  <div class="experience-grid">
+
+    <article class="experience-card">
+      <a href="Gorilla Family in Misty Rainforest.png" target="_blank">
+        <img src="Gorilla Family in Misty Rainforest.png"
+             alt="Mountain gorilla trekking" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>01 · WILDLIFE</span>
+        <h3>Gorilla Trekking</h3>
+        <p>Discover Rwanda's mountain gorillas and their natural habitat.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Gorilla trekking">Plan your trip ↗</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <a href="tour3.jpeg" target="_blank">
+        <img src="tour3.jpeg"
+             alt="Nyungwe Forest rainforest" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>02 · NATURE</span>
+        <h3>Nyungwe Forest</h3>
+        <p>Explore the rainforest and experience its rich biodiversity.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Nyungwe Forest">Plan your trip ↗</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <a href="tour1.jpeg" target="_blank">
+        <img src="tour1.jpeg"
+             alt="Lake Kivu in Rwanda" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>03 · LAKE & LEISURE</span>
+        <h3>Lake Kivu</h3>
+        <p>Enjoy beautiful lake views, boat trips and relaxing moments.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Lake Kivu">Plan your trip ↗</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <a href="tour2.jpeg" target="_blank">
+        <img src="tour2.jpeg"
+             alt="Mountain hiking in Rwanda" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>04 · ADVENTURE</span>
+        <h3>Mountain Hiking</h3>
+        <p>Discover scenic mountain trails and Rwanda's green hills.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Mountain hiking">Plan your trip ↗</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <a href="tour4.jpeg" target="_blank">
+        <img src="tour4.jpeg"
+             alt="Wildlife safari in Akagera" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>05 · SAFARI</span>
+        <h3>Wildlife Safari</h3>
+        <p>Experience wildlife and explore Akagera's natural landscapes.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Wildlife safari">Plan your trip ↗</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <a href="tour6.jpeg" target="_blank">
+        <img src="tour6.jpeg"
+             alt="Relaxing on the shore of Lake Kivu" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>06 · RELAXATION</span>
+        <h3>Lakeside Relaxation</h3>
+        <p>Enjoy peaceful surroundings and beautiful lakeside scenery.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Lakeside relaxation">Plan your trip ↗</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <a href="tour7.jpeg" target="_blank">
+        <img src="tour7.jpeg"
+             alt="Traditional Rwandan cultural dance" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>07 · CULTURE</span>
+        <h3>Rwandan Culture</h3>
+        <p>Discover traditional dances, customs and cultural heritage.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Rwandan culture">Plan your trip ↗</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <a href="tour8.jpeg" target="_blank">
+        <img src="tour8.jpeg"
+             alt="The amaunt of Rutsiro" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>08 · CITY TOUR</span>
+        <h3>Kigali City Tour</h3>
+        <p>Explore the capital's attractions, landmarks and city life.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Kigali city tour">Plan your trip ↗</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <a href="tour9.jpeg" target="_blank">
+        <img src="tour9.jpeg"
+             alt="Rwandan coffee experience" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>09 · LOCAL FLAVOURS</span>
+        <h3>Rwandan Coffee</h3>
+        <p>Discover Rwanda's coffee culture and local flavours.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Rwandan coffee">Plan your trip ↗</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <a href="tour91.jpeg" target="_blank">
+        <img src="tour91.jpeg"
+             alt="Birdwatching in Rwanda" loading="lazy">
+      </a>
+      <div class="experience-content">
+        <span>10 · NATURE</span>
+        <h3>Birdwatching</h3>
+        <p>Observe beautiful birds and discover Rwanda's natural habitats.</p>
+        <a class="experience-link" href="#booking"
+           data-interest="Birdwatching">Plan your trip ↗</a>
+      </div>
+    </article>
+
+  </div>
+</section>
